@@ -1,0 +1,52 @@
+#app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 1.25rem;
+}
+
+aside {
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .75rem;
+    height: 100%;
+
+    padding: 2rem;
+
+    img {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: .75rem;
+        font: var(--logo);
+        color: var(--pink);
+    }
+
+    p {
+        font: var(--body);
+        color: var(--text-heading);
+    }
+}
+
+main {
+    overflow: auto;
+    padding-block: 5rem;
+    border-radius: .75rem;
+    background-color: var(--shape-body);
+
+    #main-container {
+        padding-inline: 8.125rem;
+        display: grid;
+        gap: 2.5rem;
+
+        h2 {
+            font: var(--heading-md);
+            color: var(--text-heading);
+        }
+    }
+}
