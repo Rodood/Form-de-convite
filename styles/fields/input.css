@@ -1,0 +1,30 @@
+input, textarea {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--input-base);
+    color: var(--text-heading);
+    border: 1px solid var(--input-stroke);
+
+    padding: .8125rem 1rem;
+
+    font: var(--body-md);
+}
+
+label {
+    font: var(--body-sm);
+    color: var(--text-body);
+    display: block;
+    margin-bottom: .75rem;
+}
+
+::placeholder {
+    color: var(--input-placeholder);
+}
+
+input:focus,
+textarea:focus,
+input[type=date]:focus-within {
+    outline: none;
+    border-color: var(--brand-light);
+}

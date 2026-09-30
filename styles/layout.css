@@ -41,8 +41,6 @@ main {
 
     #main-container {
         padding-inline: 8.125rem;
-        display: grid;
-        gap: 2.5rem;
 
         h2 {
             font: var(--heading-md);
