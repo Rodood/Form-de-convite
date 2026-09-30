@@ -27,9 +27,86 @@
                 <h2>Crie seu convite</h2>
                 <form>
                     <fieldset class="about-event">
-                        <div class="flex">
+                        <div class="legend">
                             <img src="assets/icons/calendar.svg" alt="ícone de calendário">
-                            <h3>Sobre o evento</h3>
+                            <legend>Sobre o evento</legend>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-name">Título</label>
+                            <input 
+                                id="event-name"
+                                name="event-name"
+                                type="text"
+                                placeholder="Nome do evento"
+                            >
+                        </div>
+
+                        <div class="grid">
+                            <div class="input-wrapper">
+                                <label for="event-begin">Início</label>
+                                <input 
+                                    id="event-begin"
+                                    name="event-begin"
+                                    type="datetime-local"
+                                >
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-end">Fim</label>
+                                <input 
+                                    id="event-end"
+                                    name="event-end"
+                                    type="datetime-local"
+                                >
+                            </div>
+
+                            <div class="radio-wrapper">
+                                <label>Tipo</label>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <label for="in-person">Presencial</label>
+                                    <input 
+                                        id="in-person"
+                                        name="in-person"
+                                        value="in-person"
+                                        type="radio"
+                                    >
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <label for="remote">Remoto</label>
+                                    <input 
+                                        id="remote"
+                                        name="remote"
+                                        value="remote"
+                                        type="radio"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="local">Local</label>
+                                <input 
+                                    id="local"
+                                    name="local"
+                                    type="text"
+                                    placeholder="Link ou endereço"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea 
+                                name="description" 
+                                id="description" 
+                                cols="60"
+                                rows="6"
+                                placeholder="Escreva sobre os detalhes do evento"
+                            ></textarea>
                         </div>
                     </fieldset>
                 </form>

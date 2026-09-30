@@ -67,7 +67,7 @@ img {
     height: auto;
 }
 
-.flex {
+.legend {
     display: flex;
     align-items: center;
     gap: .75rem;
