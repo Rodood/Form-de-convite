@@ -10,6 +10,10 @@ fieldset {
     gap: 1rem;
 }
 
+fieldset + fieldset {
+    margin-top: 3rem;
+}
+
 .legend {
     font: var(--heading-sm);
     margin-bottom: 1.5rem;

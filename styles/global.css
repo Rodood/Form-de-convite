@@ -72,3 +72,49 @@ img {
     align-items: center;
     gap: .75rem;
 }
+
+/* Utility */
+
+.blue-bg {
+    background-color: var(--brand-light);
+}
+
+.navy-bg {
+    background-color: var(--navy);
+}
+
+.purple-bg {
+    background-color: var(--purple);
+}
+
+.fuschia-bg {
+    background-color: var(--fuschia);
+}
+
+.pink-bg {
+    background-color: var(--pink);
+}
+
+.red-bg {
+    background-color: var(--danger);
+}
+
+.orange-bg {
+    background-color: var(--orange);
+}
+
+.yellow-bg {
+    background-color: var(--yellow);
+}
+
+.lime-bg {
+    background-color: var(--lime);
+}
+
+.green-bg {
+    background-color: var(--green);
+}
+
+.cyan-bg {
+    background-color: var(--cyan);
+}
