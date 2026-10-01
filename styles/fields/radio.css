@@ -61,3 +61,37 @@
         }
     }
 }
+
+.color-wrapper {
+    display: flex;
+    align-content: space-around;
+}
+
+.color-inner {
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    .color-holder {
+        background-image: url(../../assets/icons/color-selector-default.svg);
+        width: 2.5rem;
+        height: 2.5rem;
+
+        position: relative;
+        .color-circle {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+
+            position: absolute;
+            top: .375rem;
+            left: .375rem;
+        }
+    }
+}
