@@ -1,0 +1,63 @@
+.type-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+}
+
+.type-inner {
+    border-radius: .5rem;
+
+    margin: .25rem;
+    padding: .125rem;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: .2fr 1fr;
+    gap: .5rem;
+
+    & label {
+        margin-top: .65rem;
+    }
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    .in-person-image {
+        background-image: url(../../assets/icons/presencial-default.svg);
+    }
+
+    .remote-image {
+        background-image: url(../../assets/icons/remote-default.svg);
+    }
+
+    .in-person-image, .remote-image {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    &:has(:checked) {
+        background-color: var(--shape-button);
+        
+        & label {
+            color: var(--text-heading);
+        }
+
+        & .in-person-image {
+            background-image: url(../../assets/icons/presencial-checked.svg);
+        }
+
+        & .remote-image {
+            background-image: url(../../assets/icons/remote-checked.svg);
+        }
+    }
+}

@@ -24,7 +24,25 @@ label {
 
 input:focus,
 textarea:focus,
-input[type=date]:focus-within {
+input[type=datetime-local]:focus-within {
     outline: none;
     border-color: var(--brand-light);
+}
+
+input[type="datetime-local"] {
+    appearance: none;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

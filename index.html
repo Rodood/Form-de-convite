@@ -61,29 +61,32 @@
                                 >
                             </div>
 
-                            <div class="radio-wrapper">
+                            <div>
                                 <label>Tipo</label>
 
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
-                                    <label for="in-person">Presencial</label>
-                                    <input 
+                                <div class="type-wrapper">
+                                    <div class="type-inner">
+                                        <div class="in-person-image"></div>
+                                        <input 
                                         id="in-person"
-                                        name="in-person"
+                                        name="type"
                                         value="in-person"
                                         type="radio"
-                                    >
-                                </div>
+                                        checked
+                                        >
+                                        <label for="in-person">Presencial</label>
+                                    </div>
 
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
-                                    <label for="remote">Remoto</label>
-                                    <input 
+                                    <div class="type-inner">
+                                        <div class="remote-image"></div>
+                                        <input 
                                         id="remote"
-                                        name="remote"
+                                        name="type"
                                         value="remote"
                                         type="radio"
-                                    >
+                                        >
+                                        <label for="remote">Remoto</label>
+                                    </div>
                                 </div>
                             </div>
 
@@ -107,6 +110,13 @@
                                 rows="6"
                                 placeholder="Escreva sobre os detalhes do evento"
                             ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="personalization">
+                        <div class="legend">
+                            <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
+                            <legend>Personalização</legend>
                         </div>
                     </fieldset>
                 </form>
