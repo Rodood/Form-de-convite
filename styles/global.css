@@ -73,6 +73,12 @@ img {
     gap: .75rem;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
 /* Utility */
 
 .blue-bg {

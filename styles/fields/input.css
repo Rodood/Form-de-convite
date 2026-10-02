@@ -46,3 +46,24 @@ input[type="datetime-local"] {
         transform: translateY(-50%);
     }
 }
+
+input {
+    &:invalid {
+        border: .125rem solid var(--danger);
+    }
+
+    &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--danger);
+
+        margin-top: .5rem;
+    }
+
+    &:not(:focus)&:valid + .error {
+        display: none;
+    }
+}
