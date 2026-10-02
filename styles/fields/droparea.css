@@ -1,0 +1,36 @@
+.droparea {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    gap: .75rem;
+    
+    position: relative;
+    span {
+        margin-top: .75rem;
+        color: var(--text-body);
+    }
+}
+
+.dropzone {
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .75rem;
+
+    position: relative;
+
+    & input {
+        position: absolute;
+        width: 7.5rem;
+        height: 2.5rem;
+        inset: 0;
+        opacity: 0;
+    }
+
+    p {
+        color: var(--text-heading);
+    }
+}
