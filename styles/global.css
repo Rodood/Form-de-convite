@@ -73,6 +73,13 @@ img {
     gap: .75rem;
 }
 
+.flex {
+    display: flex;
+    gap: .75rem;
+    align-items: flex-start;
+    margin-top: .25rem;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
