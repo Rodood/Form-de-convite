@@ -22,15 +22,22 @@
 
     position: relative;
 
+
     & input {
         position: absolute;
         width: 7.5rem;
         height: 2.5rem;
         inset: 0;
         opacity: 0;
+        cursor: pointer;
     }
 
     p {
         color: var(--text-heading);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--shape-hover);
     }
 }
