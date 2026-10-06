@@ -1,6 +1,6 @@
 #app {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: .8fr 2fr;
 
     height: 100vh;
     overflow: hidden;
@@ -12,6 +12,7 @@ aside {
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: .75rem;
     height: 100%;
 
